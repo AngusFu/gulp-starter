@@ -1,0 +1,41 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "test",
+  "dependencies": {},
+  "scripts": {
+    "wp": "webpack-dev-server --port 8080 --hot --progress --colors --inline ./src/js/index.js",
+    "wpbuild": "webpack -p ./js/index.js  ./bundle.[hash:8].js"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.3.13",
+    "babel-plugin-transform-es3-property-literals": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "browser-sync": "^2.10.1",
+    "dot": "^1.0.3",
+    "gulp": "^3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-dot": "^1.5.0",
+    "gulp-dotjs-compiler": "^1.0.4",
+    "gulp-filter": "^3.0.1",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "^1.7.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-css-url": "^0.1.0",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "json-front-matter": "^1.0.0",
+    "lodash": "^3.10.1"
+  }
+}

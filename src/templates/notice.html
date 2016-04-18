@@ -1,0 +1,21 @@
+
+{{~it.array:item:index}}
+    <a href="{{= NOTICE_URL.replace(/noticeid/, item.Id)}}" target="_blank">
+        <div class="notice_text">
+            
+            {{? item.SNIsTop == 1}}
+                <label class="labelTop">[顶]</label>
+            {{?}}
+            
+            {{? item.SNRReadingFlag == 1}}
+                {{= item.SNTitle}}
+            {{??}}
+                <label class="labelNoRead">
+                    {{= item.SNTitle}}
+                </label>
+            {{?}}
+            <i class="notice_time "><i class="iconfont iconfont-jishiqi">&nbsp;</i>{{= getDate(item.SNCreateDate)}}</i>
+        </div>
+    </a>
+{{~}}
+

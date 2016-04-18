@@ -1,0 +1,14 @@
+
+{{~it.array:item:index}}
+    <a href="{{= DOC_URL.replace(/noticeid/, item.Id)}}" target="_blank">
+        <div class="word_tit">
+            <i class="iconfont iconfont-bianjiwenjian">&nbsp;</i>
+            
+            {{? item.SNRReadingFlag == 1}}
+                {{= item.SNTitle}}
+            {{??}}
+                <label class="labelNoRead">{{= item.SNTitle}}</label>
+            {{?}}
+        </div>
+    </a>
+{{~}}
